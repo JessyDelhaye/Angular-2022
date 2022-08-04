@@ -6,20 +6,19 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BorderCardDirective } from './border-card.directive';
 import { PokemonTypeColorPipe } from './pokemon-type-color.pipe';
-
+import { ListPokemonComponent } from './list-pokemon/list-pokemon.component';
+import { DetailPokemonComponent } from './detail-pokemon/detail-pokemon.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
     AppComponent,
     BorderCardDirective,
-    PokemonTypeColorPipe
+    PokemonTypeColorPipe,
+    ListPokemonComponent,
+    DetailPokemonComponent,
+    PageNotFoundComponent
   ],
-  bootstrap: [
-    AppComponent
-  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
